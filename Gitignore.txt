@@ -1,27 +1,26 @@
-S? d?ng gitignore
-**Why (T?i sao):**
-1. **Tr�nh R�c:** Ng�n ch?n c�c file kh�ng c?n thi?t ho?c t?m th?i t? vi?c ��a v�o Git, gi? cho kho l�u tr? (repository) g?n g�ng.
+Sử dụng gitignore
+**Why (Tại sao):**
+1. **Tránh Rác:** Ngăn chặn các file không cần thiết hoặc tạm thời từ việc đưa vào Git, giữ cho kho lưu trữ (repository) gọn gàng.
   
-2. **B?o M?t:** Lo?i b? c�c file ch?a th�ng tin nh?y c?m (v� d?: m?t kh?u) �? b?o v? th�ng tin.
+2. **Bảo Mật:** Loại bỏ các file chứa thông tin nhạy cảm (ví dụ: mật khẩu) để bảo vệ thông tin.
 
-3. **Hi?u Su?t:** Gi?m k�ch th�?c repository v� t�ng t?c �? ho?t �?ng c?a Git.
+3. **Hiệu Suất:** Giảm kích thước repository và tăng tốc độ hoạt động của Git.
 
-**What (File .gitignore l� g?):**
-- File `.gitignore` l� m?t t?p tin trong Git, ��?c s? d?ng �? li?t k� c�c file ho?c th� m?c m� Git s? b? qua, kh�ng theo d?i hay ��a v�o qu?n l? phi�n b?n.
+**What (File .gitignore là gì):**
+- File `.gitignore` là một tệp tin trong Git, được sử dụng để liệt kê các file hoặc thư mục mà Git sẽ bỏ qua, không theo dõi hay đưa vào quản lý phiên bản.
 
-**How (File n�y ho?t �?ng nh� th? n�o):**
-- Khi th?c hi?n l?nh commit, Git s? ki?m tra file `.gitignore` v� lo?i tr? nh?ng file ho?c th� m?c ��?c li?t k� trong ��.
-- C�c k? t? �?c bi?t nh� `*` (�?i di?n cho b?t k? chu?i k? t? n�o) c� th? ��?c s? d?ng �? t?o ra c�c quy t?c linh ho?t h�n.
+**How (File này hoạt động như thế nào):**
+- Khi thực hiện lệnh commit, Git sẽ kiểm tra file `.gitignore` và loại trừ những file hoặc thư mục được liệt kê trong đó.
+- Các ký tự đặc biệt như `*` (đại diện cho bất kỳ chuỗi ký tự nào) có thể được sử dụng để tạo ra các quy tắc linh hoạt hơn.
 
-**When (Khi n�o c?n s? d?ng):**
-- Ngay t? �?u d? �n �? �?t c�c quy t?c lo?i tr?.
-- Tr�?c khi th?c hi?n commit �?u ti�n �? �?m b?o kh�ng c� file kh�ng mong mu?n n�o ��?c ��a v�o Git.
+**When (Khi nào cần sử dụng):**
+- Ngay từ đầu dự án để đặt các quy tắc loại trừ.
+- Trước khi thực hiện commit đầu tiên để đảm bảo không có file không mong muốn nào được đưa vào Git.
 
-**Where (N�i �?t file n�y trong th� m?c d? �n):**
-- Th�?ng ��?c �?t ? th� m?c g?c c?a d? �n (root directory).
-- C� th? c� nhi?u file `.gitignore` trong c�c th� m?c con �? qu?n l? c? th? cho t?ng ph?n c?a d? �n.
+**Where (Nơi đặt file này trong thư mục dự án):**
+- Thường được đặt ở thư mục gốc của dự án (root directory).
+- Có thể có nhiều file `.gitignore` trong các thư mục con để quản lý cụ thể cho từng phần của dự án.
 
-**Who (Ai n�n s? d?ng .gitignore):**
-- M?i ng�?i l�m vi?c v?i Git, t? l?p tr?nh vi�n �?n nh� ph�t tri?n, qu?n l? d? �n, v� c? nh?ng ng�?i kh�ng chuy�n.
-- �?c bi?t quan tr?ng cho c�c d? �n nh�m �? gi? cho repository s?ch s? v� r? r�ng.
-
+**Who (Ai nên sử dụng .gitignore):**
+- Mọi người làm việc với Git, từ lập trình viên đến nhà phát triển, quản lý dự án, và cả những người không chuyên.
+- Đặc biệt quan trọng cho các dự án nhóm để giữ cho repository sạch sẽ và rõ ràng.
